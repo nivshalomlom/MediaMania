@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/toolbar_black"
+    android:paddingVertical="20sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:hint="@string/media_search_hint"
+            android:textColor="@color/toolbar_white"
+            android:textColorHint="@color/faded_dark_grey"
+            android:maxLines="1"
+            android:inputType="text"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_weight="1"
+            android:id="@+id/media_fragment_search_input"/>
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@null"
+            android:src="@drawable/cog_icon"
+            android:id="@+id/media_fragment_search_settings_button"
+            android:contentDescription="@string/search_settings_image_button_content" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/media_fragment_recycler"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MediaMania</string>
+
+    <string name="drawer_btn_content">Opens The Navigation Drawer</string>
+    <string name="options_btn_content">Opens The Settings Dropdown Menu</string>
+    <string name="back_btn_content">Goes Back To The Previous Page</string>
+    <string name="poster_image_content">Media Poster</string>
+    <string name="login_icon_content">App icon</string>
+    <string name="news_item_image_content">News item image</string>
+    <string name="splash_screen_app_icon_content">Splash screen app icon</string>
+    <string name="search_settings_image_button_content">Search settings image button</string>
+    <string name="review_star_icon_content">Review star icon</string>
+
+    <string name="share_item_label">Share</string>
+    <string name="exit_item_label">Exit</string>
+    <string name="media_list_settings_popup_close_label">Close</string>
+    <string name="media_list_settings_popup_apply_label">Apply</string>
+    <string name="submit_btn_label">Submit</string>
+    <string name="loading_popup_text_label">Loading</string>
+    <string name="media_upload_btn_label">Upload</string>
+
+    <string name="media_upload_year_hint">Year</string>
+    <string name="media_details_review_content_hint">Content</string>
+
+    <string name="news_feed_title">Latest Updates:</string>
+    <string name="settings_activity_title">Settings</string>
+
+    <string name="sign_up_link">Don\'t have a account?, Sign up</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="sign_up_btn">Sign Up</string>
+
+    <string name="email_login_hint">Email</string>
+    <string name="password_login_hint">Password</string>
+    <string name="username_login_hint">Username</string>
+    <string name="media_search_hint">search by name</string>
+    <string name="media_upload_item_name_hint">Title</string>
+    <string name="media_upload_summary_hint">Summary</string>
+
+    <string name="guest_username">Guest</string>
+    <string name="guest_email">Log in to see more!</string>
+    <string name="sign_up_page_title">Sign up</string>
+    <string name="media_details_reviews_title">Reviews:</string>
+    <string name="media_details_summery_title">Summery:</string>
+    <string name="add_your_own_review_title">Add your own review:</string>
+</resources>

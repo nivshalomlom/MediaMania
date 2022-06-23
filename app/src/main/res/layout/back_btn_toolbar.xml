@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/toolbar_black"
+        android:padding="10sp">
+
+        <ImageButton
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/back_toolbar_btn"
+            android:background="@null"
+            android:src="@drawable/back_icon"
+            android:contentDescription="@string/back_btn_content"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="30sp"
+            android:textColor="@color/toolbar_white"
+            android:paddingHorizontal="15sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/back_toolbar_title"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

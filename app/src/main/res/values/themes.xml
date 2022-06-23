@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MediaMania" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/toolbar_white</item>
+        <item name="colorPrimaryVariant">@color/toolbar_black</item>
+        <item name="colorOnPrimary">@color/toolbar_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/toolbar_white</item>
+        <item name="colorSecondaryVariant">@color/toolbar_black</item>
+        <item name="colorOnSecondary">@color/toolbar_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Popup menu -->
+        <item name="android:itemBackground">@drawable/item_background</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Popup menu theme -->
+    <style name="Theme.MediaMania.PopupMenu">
+        <item name="android:itemBackground">@color/toolbar_black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:colorBackground">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Loading popup theme -->
+    <style name="Theme.MediaMania.LoadingPopup">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Material image view theme -->
+    <style name="ShapeAppearanceOverlay.App.RoundedCorners" parent="">
+        <item name="cornerSize">10sp</item>
+    </style>
+
+</resources>

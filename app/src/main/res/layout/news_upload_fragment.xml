@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/toolbar_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginVertical="30sp">
+
+        <EditText
+            android:layout_width="300sp"
+            android:layout_height="match_parent"
+            android:hint="@string/media_upload_item_name_hint"
+            android:textColor="@color/toolbar_white"
+            android:textColorHint="@color/faded_dark_grey"
+            android:inputType="text"
+            android:backgroundTint="@android:color/darker_gray"
+            android:id="@+id/news_upload_title_edit_text"
+            android:autofillHints="username"/>
+
+        <EditText
+            android:layout_width="290sp"
+            android:layout_height="200sp"
+            android:gravity="start|top"
+            android:textColor="@color/toolbar_white"
+            android:textColorHint="@color/faded_dark_grey"
+            android:hint="@string/media_upload_summary_hint"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@android:color/darker_gray"
+            android:id="@+id/news_upload_description_edit_text"
+            android:scrollbars="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="10sp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="300sp"
+            android:layout_height="200sp"
+            android:layout_marginVertical="20sp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="1sp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.RoundedCorners"
+            android:id="@+id/news_upload_image"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:backgroundTint="@android:color/darker_gray"
+            app:cornerRadius="45sp"
+            android:text="@string/media_upload_btn_label"
+            android:textColor="@color/toolbar_black"
+            android:id="@+id/news_upload_submit_button"/>
+
+    </LinearLayout>
+
+</ScrollView>
