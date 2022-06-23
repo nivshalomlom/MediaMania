@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent sendIntent = new Intent(Intent.ACTION_SEND);
 
                     // Attach data
-                    sendIntent.putExtra(Intent.EXTRA_TEXT, "INSERT LINK TO APP HERE");
+                    sendIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/nivshalomlom/MediaMania");
                     sendIntent.putExtra(Intent.EXTRA_TITLE, "Invite people to join media mania");
 
                     // Show the Share sheet
