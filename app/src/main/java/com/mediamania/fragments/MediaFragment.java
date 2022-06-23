@@ -30,6 +30,7 @@ import com.mediamania.logic.Utility;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Locale;
 
 public class MediaFragment extends Fragment {
 
@@ -97,7 +98,7 @@ public class MediaFragment extends Fragment {
                 public void onTextChanged(CharSequence charSequence, int start, int before, int count) {}
 
                 @Override
-                public void afterTextChanged(Editable editable) { mediaAdapter.filterBy(item -> item.getTitle().startsWith(editable.toString().toLowerCase()), false); }
+                public void afterTextChanged(Editable editable) { mediaAdapter.filterBy(item -> item.getTitle().toLowerCase().startsWith(editable.toString().toLowerCase()), true); }
 
                 @Override
                 public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {}
