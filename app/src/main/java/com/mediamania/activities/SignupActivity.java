@@ -58,6 +58,7 @@ public class SignupActivity extends AppCompatActivity {
             boolean emailInvalid = !emailStr.matches(Constants.EMAIL_REGEX);
             boolean usernameInvalid = usernameStr.length() == 0;
             boolean passwordInvalid = passwordStr.length() == 0;
+            boolean passwordToShort = passwordStr.length() < 6;
 
             if (emailInvalid)
                 email.setError("Please enter a valid email!");
@@ -67,6 +68,12 @@ public class SignupActivity extends AppCompatActivity {
 
             if (passwordInvalid)
                 password.setError("Please enter a password!");
+
+            if (passwordToShort)
+                password.setError("Password should have at least 6 charters");
+
+            if (emailInvalid || usernameInvalid || passwordInvalid || passwordToShort)
+                return;
 
             // Open loading screen
             Dialog loadingScreen = Utility.openLoadingPopup(this);
